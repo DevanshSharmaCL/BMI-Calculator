@@ -1,0 +1,148 @@
+/* Reset default styles and set a luxurious foundation */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1a2a2f 0%, #0f1c20 100%); /* Deep teal-to-black gradient */
+    font-family: 'Cinzel', serif; /* Classic serif font for old money elegance */
+    color: #d4af37; /* Soft gold for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Main container */
+  main {
+    background: #fffcf5; /* Creamy off-white for a parchment-like feel */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Deep, rich shadow */
+    border: 2px solid #8b6f47; /* Subtle dark gold border */
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2e2e2e; /* Charcoal gray for contrast */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d4af37; /* Gold underline */
+    padding-bottom: 10px;
+  }
+  
+  /* Input section */
+  .inputSelection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* Slider labels */
+  .slide-output,
+  .slider-output {
+    font-size: 1.2rem;
+    color: #2e2e2e;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  /* Custom range sliders */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #8b6f47, #d4af37); /* Gold gradient track */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Slider thumb (handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2e2e2e; /* Dark charcoal thumb */
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2e2e2e;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect on thumb */
+  input[type="range"]:hover::-webkit-slider-thumb,
+  input[type="range"]:hover::-moz-range-thumb {
+    transform: scale(1.2);
+  }
+  
+  /* Output section */
+  .output-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .output-section p {
+    font-size: 1.3rem;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+  }
+  
+  /* BMI result display */
+  .output {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d4af37; /* Gold for emphasis */
+    background: #2e2e2e; /* Dark background for contrast */
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b6f47;
+  }
+  
+  /* Add subtle hover animations */
+  .output:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    main {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .output {
+      font-size: 2rem;
+      padding: 10px 20px;
+    }
+  }
